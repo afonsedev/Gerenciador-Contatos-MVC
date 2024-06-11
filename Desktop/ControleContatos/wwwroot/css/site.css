@@ -1,0 +1,107 @@
+html {
+  font-size: 14px;
+}
+
+/*header, main, body {
+    background-color: #222223;
+}
+
+*
+{
+    color: white;
+}*/
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.area-bemvindo {
+    
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.robo-titulo {
+    width: 7rem;
+    height: 4rem;
+}
+
+header {
+    box-shadow: 7px 7px 13px #e6e6e6, -7px -7px 13px #ffffff;
+    padding: 2rem 2rem 2rem 6rem;
+}
+
+nav {
+    border-bottom: none;
+}
+
+.form-group{
+    padding-bottom: 0.7rem;
+}
+
+
+.area-botoes {
+    padding-top: 1rem;
+}
+
+.area-contato{
+    display: flex;
+}
+
+.close-alert{
+    position:absolute;
+    right:-10px;
+    top:-15px;
+    bottom-border-radius: 15px;
+    width: 30px;
+    height: 31px;
+
+}
+
+
+.display-4 {
+font-size: 5rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    width: 29rem;
+}
+
+#btn-adicionar {
+    height: 3.5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+
+#btn-adicionar2 {
+    height: 3.5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}

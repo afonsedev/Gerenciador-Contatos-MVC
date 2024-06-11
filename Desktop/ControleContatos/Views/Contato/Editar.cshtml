@@ -1,0 +1,40 @@
+﻿@model ContatoModel
+@{
+    ViewData["Title"] = "Editar Contato";
+}
+
+<div class="text-center">
+    <div class="area-bemvindo">
+        <h1 class="display-4">Editar Contato</h1>
+        <img class="robo-titulo" src="https://dotnet.microsoft.com/blob-assets/images/illustrations/swimlane-subscribe-to-news-tips.svg" />
+    </div>
+</div>
+
+<form asp-controller="Contato" asp-action="Alterar" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="O nome do seu contato.">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+
+    <div class="form-group">
+        <label for="e-mail" class="form-label">E-mail</label>
+        <input type="text" asp-for="Email" class="form-control" placeholder="O e-mail do contato.">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+    <div class="form-group">
+        <label for="numero" class="form-label">Número</label>
+        <input type="text" asp-for="Celular" class="form-control" placeholder="O número do seu contato.">
+        @Html.ValidationMessageFor(x => x.Celular)
+    </div>
+
+    <section class="area-botoes">
+        <button type="submit" class="btn btn-primary">Alterar</button>
+        <a class="btn btn-secondary" asp-controller="Contato" asp-action="Index" role="button">Voltar</a>
+    </section>
+</form>
+
