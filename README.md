@@ -1,5 +1,5 @@
 
-# Gerenciador MVC
+# Gerenciador de Contatos - Arquitetura MVC
 
 Projeto CRUD (Create, Read, Update, Delete) de um Gerenciador de Contatos, desenvolvido para estudo da Arquitetura MVC (Model-View-Controller), 
 ASP.NET Core, Entity Framework, SQL Server e o conceito de Migrations.
